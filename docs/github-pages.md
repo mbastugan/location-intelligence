@@ -17,3 +17,13 @@ GitHub Pages only serves static files. The API stays local (and later can move t
 ## Optional: Vercel
 
 Connecting the same GitHub repo to Vercel free tier is often easier for Next.js. Still free; domain later. Pages remains fine if we stay on static export.
+
+## Enabling GitHub Actions deploy
+
+The workflow file lives at `docs/pages.workflow.yml.example` because the initial GitHub OAuth token lacked the `workflow` scope.
+
+To enable automatic Pages deploys:
+
+1. Re-auth `gh` with `workflow` scope, **or** add the file in the GitHub UI.
+2. Copy to `.github/workflows/pages.yml` and push.
+3. Repo → Settings → Pages → Source: **GitHub Actions**.
