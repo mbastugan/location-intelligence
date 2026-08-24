@@ -8,6 +8,7 @@ export function SiteHeader() {
         WhichPlaceGusto
       </Link>
       <nav>
+        <Link href="/find">Find</Link>
         <Link href="/spain/malaga">Explore</Link>
         <Link href="/compare/malaga-vs-alicante">Compare</Link>
       </nav>

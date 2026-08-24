@@ -23,8 +23,8 @@ export default async function HomePage() {
             spam.
           </p>
           <div className="actions">
-            <Link className="btn btn-primary" href="/spain/malaga">
-              Explore cities
+            <Link className="btn btn-primary" href="/find">
+              Find my place
             </Link>
             <Link className="btn btn-secondary" href="/compare/malaga-vs-alicante">
               Compare cities
