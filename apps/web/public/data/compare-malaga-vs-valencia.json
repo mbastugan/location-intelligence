@@ -26,8 +26,8 @@
       "code": "estimated_gross_yield",
       "name": "Estimated gross rental yield",
       "unit": "%",
-      "a": 4.98,
-      "b": 5.55
+      "a": 3.6,
+      "b": 3.85
     },
     {
       "code": "foreign_population_share",
@@ -54,8 +54,8 @@
       "code": "rent_m2",
       "name": "Rent per m²",
       "unit": "EUR/m2/month",
-      "a": 13.2,
-      "b": 11.8
+      "a": 9.553,
+      "b": 8.182
     },
     {
       "code": "sunshine_hours_annual",
@@ -76,7 +76,7 @@
       "name": "Living Score",
       "unit": "score_0_100",
       "a": 41.7,
-      "b": 43.5
+      "b": 44.7
     }
   ],
   "insights": [

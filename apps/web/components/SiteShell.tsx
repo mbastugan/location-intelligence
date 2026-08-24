@@ -5,7 +5,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link href="/" className="brand">
-        Location Intelligence
+        WhichPlaceGusto
       </Link>
       <nav>
         <Link href="/spain/malaga">Explore</Link>

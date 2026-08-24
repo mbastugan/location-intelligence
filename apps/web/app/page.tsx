@@ -14,7 +14,7 @@ export default async function HomePage() {
   return (
     <>
       <section className="hero">
-        <h1>Location Intelligence</h1>
+        <h1>WhichPlaceGusto</h1>
         <p>
           Find the best place to live or invest using real data — not listing
           spam. Compare Spanish cities on housing, rent, climate, and access.

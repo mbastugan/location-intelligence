@@ -22,7 +22,7 @@
       "quality_flag": "ok",
       "source_code": "ourairports",
       "source_url": "https://ourairports.com/airports/AGP/",
-      "collected_at": "2026-08-24T15:34:27+00:00"
+      "collected_at": "2026-08-24T15:56:20+00:00"
     },
     {
       "code": "foreign_population_share",
@@ -34,7 +34,7 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T15:34:27+00:00"
+      "collected_at": "2026-08-24T15:56:20+00:00"
     },
     {
       "code": "population",
@@ -46,19 +46,19 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T15:34:27+00:00"
+      "collected_at": "2026-08-24T15:56:20+00:00"
     },
     {
       "code": "estimated_gross_yield",
       "name": "Estimated gross rental yield",
       "unit": "%",
       "category": "property",
-      "value": 4.98,
+      "value": 3.6,
       "period_start": "2024-01-01",
       "quality_flag": "estimated",
       "source_code": "derived_internal",
       "source_url": null,
-      "collected_at": "2026-08-24T15:34:27+00:00"
+      "collected_at": "2026-08-24T15:56:36+00:00"
     },
     {
       "code": "property_price_m2",
@@ -70,19 +70,19 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T15:34:27+00:00"
+      "collected_at": "2026-08-24T15:56:20+00:00"
     },
     {
       "code": "rent_m2",
       "name": "Rent per m²",
       "unit": "EUR/m2/month",
       "category": "property",
-      "value": 13.2,
+      "value": 9.553,
       "period_start": "2024-01-01",
-      "quality_flag": "provisional",
-      "source_code": "seed_manual",
-      "source_url": null,
-      "collected_at": "2026-08-24T15:34:27+00:00"
+      "quality_flag": "ok",
+      "source_code": "serpavi_mivau",
+      "source_url": "https://cdn.mivau.gob.es/portal-web-mivau/vivienda/serpavi/2026-03_09_bd_SERPAVI_2011-2024%20-%20DEFINITIVO%20WEB_v2.xlsx",
+      "collected_at": "2026-08-24T15:56:36+00:00"
     },
     {
       "code": "avg_temp_annual",
@@ -94,7 +94,7 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T15:34:27+00:00"
+      "collected_at": "2026-08-24T15:56:20+00:00"
     },
     {
       "code": "sunshine_hours_annual",
@@ -106,7 +106,7 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T15:34:27+00:00"
+      "collected_at": "2026-08-24T15:56:20+00:00"
     }
   ],
   "series": {
@@ -124,14 +124,74 @@
     ],
     "rent_m2": [
       {
+        "period_start": "2011-01-01",
+        "value": 6.25,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2012-01-01",
+        "value": 6.034,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2013-01-01",
+        "value": 5.797,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2014-01-01",
+        "value": 5.758,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2015-01-01",
+        "value": 5.781,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2016-01-01",
+        "value": 5.952,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2017-01-01",
+        "value": 6.159,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2018-01-01",
+        "value": 6.517,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2019-01-01",
+        "value": 7.273,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2020-01-01",
+        "value": 7.5,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2021-01-01",
+        "value": 7.812,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2022-01-01",
+        "value": 8.321,
+        "quality_flag": "ok"
+      },
+      {
         "period_start": "2023-01-01",
-        "value": 12.5,
-        "quality_flag": "provisional"
+        "value": 8.861,
+        "quality_flag": "ok"
       },
       {
         "period_start": "2024-01-01",
-        "value": 13.2,
-        "quality_flag": "provisional"
+        "value": 9.553,
+        "quality_flag": "ok"
       }
     ]
   },
@@ -143,7 +203,7 @@
       "value": 41.7,
       "coverage": 1.0,
       "quality_flag": "ok",
-      "computed_at": "2026-08-24T15:34:27+00:00"
+      "computed_at": "2026-08-24T15:56:36+00:00"
     },
     {
       "code": "investment_score",
@@ -152,7 +212,7 @@
       "value": 4.9,
       "coverage": 1.0,
       "quality_flag": "ok",
-      "computed_at": "2026-08-24T15:34:27+00:00"
+      "computed_at": "2026-08-24T15:56:36+00:00"
     }
   ]
 }

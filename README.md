@@ -34,6 +34,9 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 python -m pipeline.jobs.init_db
+# Optional: after downloading SERPAVI Excel into data/raw/serpavi/
+python -m pipeline.jobs.load_serpavi
+python -m pipeline.jobs.export_static
 uvicorn apps.api.main:app --reload --port 8000
 ```
 

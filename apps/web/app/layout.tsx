@@ -14,7 +14,7 @@ const body = Source_Sans_3({
 });
 
 export const metadata: Metadata = {
-  title: "Location Intelligence",
+  title: "WhichPlaceGusto",
   description:
     "Find the best place to live or invest using real location data — starting with Spain.",
 };

@@ -101,6 +101,14 @@ export default async function CityPage({
           unit="EUR/m2"
         />
       </section>
+
+      <section className="panel">
+        <TrendChart
+          title="Rent history (€/m²/month, SERPAVI)"
+          series={data.series.rent_m2 ?? []}
+          unit="EUR/m2/month"
+        />
+      </section>
     </>
   );
 }
