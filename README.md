@@ -37,7 +37,9 @@ python -m pipeline.jobs.init_db
 # Optional loaders (after downloading raw files / network):
 python -m pipeline.jobs.load_serpavi
 python -m pipeline.jobs.load_ine_urban
+python -m pipeline.jobs.load_ine_padron
 python -m pipeline.jobs.load_open_meteo_climate
+python -m pipeline.jobs.load_airports
 # Or one shot:
 python -m pipeline.jobs.refresh_all
 python -m pipeline.jobs.export_static

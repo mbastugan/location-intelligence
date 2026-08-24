@@ -12,8 +12,8 @@
       "code": "airport_distance_km",
       "name": "Nearest major airport distance",
       "unit": "km",
-      "a": 8.0,
-      "b": 9.0
+      "a": 8.64,
+      "b": 9.23
     },
     {
       "code": "avg_temp_annual",
@@ -47,8 +47,15 @@
       "code": "population",
       "name": "Population",
       "unit": "count",
-      "a": 586384.0,
-      "b": 807693.0
+      "a": 599063.0,
+      "b": 840792.0
+    },
+    {
+      "code": "population_growth_1y",
+      "name": "Population growth (1 year)",
+      "unit": "%",
+      "a": 1.255,
+      "b": 1.797
     },
     {
       "code": "property_price_m2",
@@ -83,7 +90,7 @@
       "name": "Living Score",
       "unit": "score_0_100",
       "a": 49.3,
-      "b": 33.8
+      "b": 32.8
     }
   ],
   "insights": [

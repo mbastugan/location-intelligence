@@ -96,6 +96,7 @@ def build_city_payload(conn, slug: str) -> dict | None:
         "series": {
             "property_price_m2": _series(conn, city["id"], "property_price_m2"),
             "rent_m2": _series(conn, city["id"], "rent_m2"),
+            "population": _series(conn, city["id"], "population"),
         },
         "scores": _scores(conn, city["id"]),
     }

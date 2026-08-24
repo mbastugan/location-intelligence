@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from pipeline.jobs.export_static import main as export_main
 from pipeline.jobs.init_db import main as init_main
+from pipeline.jobs.load_airports import main as airports_main
+from pipeline.jobs.load_ine_padron import main as padron_main
 from pipeline.jobs.load_ine_urban import main as ine_main
 from pipeline.jobs.load_open_meteo_climate import main as climate_main
 from pipeline.jobs.load_serpavi import main as serpavi_main
@@ -13,7 +15,9 @@ def main() -> None:
     init_main()
     serpavi_main()
     ine_main()
+    padron_main()
     climate_main()
+    airports_main()
     export_main()
     print("Full refresh complete")
 

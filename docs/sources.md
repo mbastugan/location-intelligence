@@ -13,8 +13,8 @@
 | Source | What | Level | Notes |
 |--------|------|-------|-------|
 | MITMA valor tasado (via datos.gob / ISTAC) | €/m² time series | Province | Label as province, not city |
-| [OurAirports](https://ourairports.com/data/) | Airport coords | Point | Distance computed locally |
-| INE Atlas de renta | Income | Municipality | Affordability inputs |
+| [INE Padrón 29005](https://www.ine.es/jaxiT3/Tabla.htm?t=29005) | Municipal population | Municipality | CSV | Official 1 Jan figures |
+| [OurAirports](https://ourairports.com/data/) | Airport coords / distance | Point | CSV | Nearest scheduled airport |
 
 ## Do not use as core
 

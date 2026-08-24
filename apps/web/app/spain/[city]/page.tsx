@@ -116,6 +116,17 @@ export default async function CityPage({
           />
         </div>
       </section>
+
+      <section className="panel">
+        <h2>Population (INE Padrón)</h2>
+        <div className="panel-chart">
+          <TrendChart
+            title="Residents on 1 January"
+            series={data.series.population ?? []}
+            unit="count"
+          />
+        </div>
+      </section>
     </SiteShell>
   );
 }

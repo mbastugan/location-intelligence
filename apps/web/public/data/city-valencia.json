@@ -17,12 +17,12 @@
       "name": "Nearest major airport distance",
       "unit": "km",
       "category": "accessibility",
-      "value": 9.0,
+      "value": 9.23,
       "period_start": "2026-01-01",
       "quality_flag": "ok",
       "source_code": "ourairports",
-      "source_url": "https://ourairports.com/airports/VLC/",
-      "collected_at": "2026-08-24T16:42:50+00:00"
+      "source_url": "https://davidmegginson.github.io/ourairports-data/airports.csv",
+      "collected_at": "2026-08-24T17:04:29+00:00"
     },
     {
       "code": "foreign_population_share",
@@ -34,19 +34,31 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T16:42:50+00:00"
+      "collected_at": "2026-08-24T17:04:13+00:00"
     },
     {
       "code": "population",
       "name": "Population",
       "unit": "count",
       "category": "population",
-      "value": 807693.0,
-      "period_start": "2024-01-01",
-      "quality_flag": "provisional",
-      "source_code": "seed_manual",
+      "value": 840792.0,
+      "period_start": "2025-01-01",
+      "quality_flag": "ok",
+      "source_code": "ine_padron",
+      "source_url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/29005.csv",
+      "collected_at": "2026-08-24T17:04:27+00:00"
+    },
+    {
+      "code": "population_growth_1y",
+      "name": "Population growth (1 year)",
+      "unit": "%",
+      "category": "population",
+      "value": 1.797,
+      "period_start": "2025-01-01",
+      "quality_flag": "estimated",
+      "source_code": "derived_internal",
       "source_url": null,
-      "collected_at": "2026-08-24T16:42:50+00:00"
+      "collected_at": "2026-08-24T17:04:27+00:00"
     },
     {
       "code": "estimated_gross_yield",
@@ -58,7 +70,7 @@
       "quality_flag": "estimated",
       "source_code": "derived_internal",
       "source_url": null,
-      "collected_at": "2026-08-24T16:43:07+00:00"
+      "collected_at": "2026-08-24T17:04:25+00:00"
     },
     {
       "code": "property_price_m2",
@@ -70,7 +82,7 @@
       "quality_flag": "ok",
       "source_code": "ine_urban",
       "source_url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69330.csv",
-      "collected_at": "2026-08-24T16:43:07+00:00"
+      "collected_at": "2026-08-24T17:04:25+00:00"
     },
     {
       "code": "rent_m2",
@@ -82,7 +94,7 @@
       "quality_flag": "ok",
       "source_code": "serpavi_mivau",
       "source_url": "https://cdn.mivau.gob.es/portal-web-mivau/vivienda/serpavi/2026-03_09_bd_SERPAVI_2011-2024%20-%20DEFINITIVO%20WEB_v2.xlsx",
-      "collected_at": "2026-08-24T16:43:07+00:00"
+      "collected_at": "2026-08-24T17:04:25+00:00"
     },
     {
       "code": "crime_rate_per_1000",
@@ -94,7 +106,7 @@
       "quality_flag": "ok",
       "source_code": "ine_urban",
       "source_url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69330.csv",
-      "collected_at": "2026-08-24T16:43:07+00:00"
+      "collected_at": "2026-08-24T17:04:25+00:00"
     },
     {
       "code": "avg_temp_annual",
@@ -106,7 +118,7 @@
       "quality_flag": "ok",
       "source_code": "open_meteo",
       "source_url": "https://archive-api.open-meteo.com/v1/archive",
-      "collected_at": "2026-08-24T16:43:07+00:00"
+      "collected_at": "2026-08-24T17:04:27+00:00"
     },
     {
       "code": "sunshine_hours_annual",
@@ -118,7 +130,7 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T16:42:50+00:00"
+      "collected_at": "2026-08-24T17:04:13+00:00"
     }
   ],
   "series": {
@@ -200,6 +212,153 @@
         "value": 8.182,
         "quality_flag": "ok"
       }
+    ],
+    "population": [
+      {
+        "period_start": "1996-01-01",
+        "value": 746683.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "1998-01-01",
+        "value": 739412.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "1999-01-01",
+        "value": 739412.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2000-01-01",
+        "value": 739014.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2001-01-01",
+        "value": 746612.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2002-01-01",
+        "value": 761871.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2003-01-01",
+        "value": 780653.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2004-01-01",
+        "value": 785732.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2005-01-01",
+        "value": 796549.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2006-01-01",
+        "value": 805304.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2007-01-01",
+        "value": 797654.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2008-01-01",
+        "value": 807200.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2009-01-01",
+        "value": 814208.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2010-01-01",
+        "value": 809267.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2011-01-01",
+        "value": 798033.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2012-01-01",
+        "value": 797028.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2013-01-01",
+        "value": 792303.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2014-01-01",
+        "value": 786424.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2015-01-01",
+        "value": 786189.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2016-01-01",
+        "value": 790201.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2017-01-01",
+        "value": 787808.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2018-01-01",
+        "value": 791413.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2019-01-01",
+        "value": 794288.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2020-01-01",
+        "value": 800215.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2021-01-01",
+        "value": 789744.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2022-01-01",
+        "value": 792492.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2023-01-01",
+        "value": 807693.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2024-01-01",
+        "value": 825948.0,
+        "quality_flag": "ok"
+      },
+      {
+        "period_start": "2025-01-01",
+        "value": 840792.0,
+        "quality_flag": "ok"
+      }
     ]
   },
   "scores": [
@@ -207,10 +366,10 @@
       "code": "living_score",
       "name": "Living Score",
       "version": "v1",
-      "value": 33.8,
+      "value": 32.8,
       "coverage": 1.0,
       "quality_flag": "ok",
-      "computed_at": "2026-08-24T16:43:11+00:00"
+      "computed_at": "2026-08-24T17:04:29+00:00"
     },
     {
       "code": "investment_score",
@@ -219,7 +378,7 @@
       "value": 30.1,
       "coverage": 1.0,
       "quality_flag": "ok",
-      "computed_at": "2026-08-24T16:43:11+00:00"
+      "computed_at": "2026-08-24T17:04:29+00:00"
     }
   ]
 }
