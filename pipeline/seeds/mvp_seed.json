@@ -1,0 +1,213 @@
+{
+  "countries": [
+    {
+      "id": 1,
+      "iso2": "ES",
+      "name": "Spain",
+      "currency_code": "EUR"
+    }
+  ],
+  "data_sources": [
+    {
+      "id": 1,
+      "code": "seed_manual",
+      "name": "Manual provisional seed",
+      "homepage_url": null,
+      "license_note": "Internal placeholder until official ETL loads",
+      "notes": "Values are approximate placeholders for product wiring; replace with SERPAVI/INE/AEMET."
+    },
+    {
+      "id": 2,
+      "code": "derived_internal",
+      "name": "Internal derived metrics",
+      "homepage_url": null,
+      "license_note": "Computed from other observations",
+      "notes": "Yield and similar formulas"
+    },
+    {
+      "id": 3,
+      "code": "ourairports",
+      "name": "OurAirports",
+      "homepage_url": "https://ourairports.com/data/",
+      "license_note": "Open data; attribution appreciated",
+      "notes": "Airport coordinates for distance metrics"
+    }
+  ],
+  "metrics": [
+    {
+      "id": 1,
+      "code": "property_price_m2",
+      "name": "Property price per m²",
+      "description": "Mean purchase price per square metre",
+      "category": "property",
+      "unit": "EUR/m2",
+      "higher_is_better": false,
+      "is_derived": false
+    },
+    {
+      "id": 2,
+      "code": "rent_m2",
+      "name": "Rent per m²",
+      "description": "Mean monthly rent per square metre",
+      "category": "property",
+      "unit": "EUR/m2/month",
+      "higher_is_better": false,
+      "is_derived": false
+    },
+    {
+      "id": 3,
+      "code": "estimated_gross_yield",
+      "name": "Estimated gross rental yield",
+      "description": "rent_m2 * 12 / property_price_m2 * 100",
+      "category": "property",
+      "unit": "%",
+      "higher_is_better": true,
+      "is_derived": true
+    },
+    {
+      "id": 4,
+      "code": "population",
+      "name": "Population",
+      "description": "Municipal population",
+      "category": "population",
+      "unit": "count",
+      "higher_is_better": null,
+      "is_derived": false
+    },
+    {
+      "id": 5,
+      "code": "foreign_population_share",
+      "name": "Foreign population share",
+      "description": "Share of foreign nationals",
+      "category": "population",
+      "unit": "%",
+      "higher_is_better": null,
+      "is_derived": false
+    },
+    {
+      "id": 6,
+      "code": "avg_temp_annual",
+      "name": "Average annual temperature",
+      "description": "Mean annual temperature",
+      "category": "weather",
+      "unit": "C",
+      "higher_is_better": null,
+      "is_derived": false
+    },
+    {
+      "id": 7,
+      "code": "sunshine_hours_annual",
+      "name": "Annual sunshine hours",
+      "description": "Approximate annual sunshine hours",
+      "category": "weather",
+      "unit": "hours",
+      "higher_is_better": true,
+      "is_derived": false
+    },
+    {
+      "id": 8,
+      "code": "airport_distance_km",
+      "name": "Nearest major airport distance",
+      "description": "Great-circle distance to nearest large airport",
+      "category": "accessibility",
+      "unit": "km",
+      "higher_is_better": false,
+      "is_derived": false
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "country_id": 1,
+      "slug": "malaga",
+      "name": "Málaga",
+      "name_local": "Málaga",
+      "admin_code": "29067",
+      "location_type": "city",
+      "lat": 36.7213,
+      "lon": -4.4214
+    },
+    {
+      "id": 2,
+      "country_id": 1,
+      "slug": "valencia",
+      "name": "Valencia",
+      "name_local": "València",
+      "admin_code": "46250",
+      "location_type": "city",
+      "lat": 39.4699,
+      "lon": -0.3763
+    },
+    {
+      "id": 3,
+      "country_id": 1,
+      "slug": "alicante",
+      "name": "Alicante",
+      "name_local": "Alicante/Alacant",
+      "admin_code": "03014",
+      "location_type": "city",
+      "lat": 38.3452,
+      "lon": -0.4810
+    }
+  ],
+  "observations": [
+    {"location_id": 1, "metric_id": 1, "source_id": 1, "period_start": "2023-01-01", "period_end": "2023-12-31", "value": 2950, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 1, "metric_id": 1, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-12-31", "value": 3180, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 2, "metric_id": 1, "source_id": 1, "period_start": "2023-01-01", "period_end": "2023-12-31", "value": 2400, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 2, "metric_id": 1, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-12-31", "value": 2550, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 3, "metric_id": 1, "source_id": 1, "period_start": "2023-01-01", "period_end": "2023-12-31", "value": 2100, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 3, "metric_id": 1, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-12-31", "value": 2280, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+
+    {"location_id": 1, "metric_id": 2, "source_id": 1, "period_start": "2023-01-01", "period_end": "2023-12-31", "value": 12.5, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 1, "metric_id": 2, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-12-31", "value": 13.2, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 2, "metric_id": 2, "source_id": 1, "period_start": "2023-01-01", "period_end": "2023-12-31", "value": 11.0, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 2, "metric_id": 2, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-12-31", "value": 11.8, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 3, "metric_id": 2, "source_id": 1, "period_start": "2023-01-01", "period_end": "2023-12-31", "value": 9.8, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+    {"location_id": 3, "metric_id": 2, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-12-31", "value": 10.4, "currency_code": "EUR", "quality_flag": "provisional", "source_url": null},
+
+    {"location_id": 1, "metric_id": 4, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-01-01", "value": 586384, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+    {"location_id": 2, "metric_id": 4, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-01-01", "value": 807693, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+    {"location_id": 3, "metric_id": 4, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-01-01", "value": 350598, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+
+    {"location_id": 1, "metric_id": 5, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-01-01", "value": 15.2, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+    {"location_id": 2, "metric_id": 5, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-01-01", "value": 14.1, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+    {"location_id": 3, "metric_id": 5, "source_id": 1, "period_start": "2024-01-01", "period_end": "2024-01-01", "value": 18.6, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+
+    {"location_id": 1, "metric_id": 6, "source_id": 1, "period_start": "1991-01-01", "period_end": "2020-12-31", "value": 18.5, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+    {"location_id": 2, "metric_id": 6, "source_id": 1, "period_start": "1991-01-01", "period_end": "2020-12-31", "value": 17.4, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+    {"location_id": 3, "metric_id": 6, "source_id": 1, "period_start": "1991-01-01", "period_end": "2020-12-31", "value": 18.0, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+
+    {"location_id": 1, "metric_id": 7, "source_id": 1, "period_start": "1991-01-01", "period_end": "2020-12-31", "value": 2900, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+    {"location_id": 2, "metric_id": 7, "source_id": 1, "period_start": "1991-01-01", "period_end": "2020-12-31", "value": 2700, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+    {"location_id": 3, "metric_id": 7, "source_id": 1, "period_start": "1991-01-01", "period_end": "2020-12-31", "value": 3000, "currency_code": null, "quality_flag": "provisional", "source_url": null},
+
+    {"location_id": 1, "metric_id": 8, "source_id": 3, "period_start": "2026-01-01", "period_end": "2026-01-01", "value": 8.0, "currency_code": null, "quality_flag": "ok", "source_url": "https://ourairports.com/airports/AGP/"},
+    {"location_id": 2, "metric_id": 8, "source_id": 3, "period_start": "2026-01-01", "period_end": "2026-01-01", "value": 9.0, "currency_code": null, "quality_flag": "ok", "source_url": "https://ourairports.com/airports/VLC/"},
+    {"location_id": 3, "metric_id": 8, "source_id": 3, "period_start": "2026-01-01", "period_end": "2026-01-01", "value": 10.0, "currency_code": null, "quality_flag": "ok", "source_url": "https://ourairports.com/airports/ALC/"}
+  ],
+  "score_definitions": [
+    {
+      "id": 1,
+      "code": "living_score",
+      "name": "Living Score",
+      "version": "v1",
+      "description": "Affordability, climate, accessibility oriented"
+    },
+    {
+      "id": 2,
+      "code": "investment_score",
+      "name": "Investment Score",
+      "version": "v1",
+      "description": "Yield and relative property cost oriented"
+    }
+  ],
+  "score_weights": [
+    {"score_definition_id": 1, "metric_id": 1, "weight": 0.30},
+    {"score_definition_id": 1, "metric_id": 2, "weight": 0.20},
+    {"score_definition_id": 1, "metric_id": 7, "weight": 0.25},
+    {"score_definition_id": 1, "metric_id": 8, "weight": 0.25},
+    {"score_definition_id": 2, "metric_id": 3, "weight": 0.45},
+    {"score_definition_id": 2, "metric_id": 1, "weight": 0.35},
+    {"score_definition_id": 2, "metric_id": 5, "weight": 0.20}
+  ]
+}

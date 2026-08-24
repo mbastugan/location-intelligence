@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "alicante",
+    "name": "Alicante",
+    "country_iso2": "ES",
+    "path": "/spain/alicante"
+  },
+  {
+    "slug": "malaga",
+    "name": "Málaga",
+    "country_iso2": "ES",
+    "path": "/spain/malaga"
+  },
+  {
+    "slug": "valencia",
+    "name": "Valencia",
+    "country_iso2": "ES",
+    "path": "/spain/valencia"
+  }
+]

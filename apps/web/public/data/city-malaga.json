@@ -1,0 +1,158 @@
+{
+  "slug": "malaga",
+  "name": "Málaga",
+  "name_local": "Málaga",
+  "country": {
+    "iso2": "ES",
+    "name": "Spain"
+  },
+  "admin_code": "29067",
+  "coordinates": {
+    "lat": 36.7213,
+    "lon": -4.4214
+  },
+  "metrics": [
+    {
+      "code": "airport_distance_km",
+      "name": "Nearest major airport distance",
+      "unit": "km",
+      "category": "accessibility",
+      "value": 8.0,
+      "period_start": "2026-01-01",
+      "quality_flag": "ok",
+      "source_code": "ourairports",
+      "source_url": "https://ourairports.com/airports/AGP/",
+      "collected_at": "2026-08-24T15:34:27+00:00"
+    },
+    {
+      "code": "foreign_population_share",
+      "name": "Foreign population share",
+      "unit": "%",
+      "category": "population",
+      "value": 15.2,
+      "period_start": "2024-01-01",
+      "quality_flag": "provisional",
+      "source_code": "seed_manual",
+      "source_url": null,
+      "collected_at": "2026-08-24T15:34:27+00:00"
+    },
+    {
+      "code": "population",
+      "name": "Population",
+      "unit": "count",
+      "category": "population",
+      "value": 586384.0,
+      "period_start": "2024-01-01",
+      "quality_flag": "provisional",
+      "source_code": "seed_manual",
+      "source_url": null,
+      "collected_at": "2026-08-24T15:34:27+00:00"
+    },
+    {
+      "code": "estimated_gross_yield",
+      "name": "Estimated gross rental yield",
+      "unit": "%",
+      "category": "property",
+      "value": 4.98,
+      "period_start": "2024-01-01",
+      "quality_flag": "estimated",
+      "source_code": "derived_internal",
+      "source_url": null,
+      "collected_at": "2026-08-24T15:34:27+00:00"
+    },
+    {
+      "code": "property_price_m2",
+      "name": "Property price per m²",
+      "unit": "EUR/m2",
+      "category": "property",
+      "value": 3180.0,
+      "period_start": "2024-01-01",
+      "quality_flag": "provisional",
+      "source_code": "seed_manual",
+      "source_url": null,
+      "collected_at": "2026-08-24T15:34:27+00:00"
+    },
+    {
+      "code": "rent_m2",
+      "name": "Rent per m²",
+      "unit": "EUR/m2/month",
+      "category": "property",
+      "value": 13.2,
+      "period_start": "2024-01-01",
+      "quality_flag": "provisional",
+      "source_code": "seed_manual",
+      "source_url": null,
+      "collected_at": "2026-08-24T15:34:27+00:00"
+    },
+    {
+      "code": "avg_temp_annual",
+      "name": "Average annual temperature",
+      "unit": "C",
+      "category": "weather",
+      "value": 18.5,
+      "period_start": "1991-01-01",
+      "quality_flag": "provisional",
+      "source_code": "seed_manual",
+      "source_url": null,
+      "collected_at": "2026-08-24T15:34:27+00:00"
+    },
+    {
+      "code": "sunshine_hours_annual",
+      "name": "Annual sunshine hours",
+      "unit": "hours",
+      "category": "weather",
+      "value": 2900.0,
+      "period_start": "1991-01-01",
+      "quality_flag": "provisional",
+      "source_code": "seed_manual",
+      "source_url": null,
+      "collected_at": "2026-08-24T15:34:27+00:00"
+    }
+  ],
+  "series": {
+    "property_price_m2": [
+      {
+        "period_start": "2023-01-01",
+        "value": 2950.0,
+        "quality_flag": "provisional"
+      },
+      {
+        "period_start": "2024-01-01",
+        "value": 3180.0,
+        "quality_flag": "provisional"
+      }
+    ],
+    "rent_m2": [
+      {
+        "period_start": "2023-01-01",
+        "value": 12.5,
+        "quality_flag": "provisional"
+      },
+      {
+        "period_start": "2024-01-01",
+        "value": 13.2,
+        "quality_flag": "provisional"
+      }
+    ]
+  },
+  "scores": [
+    {
+      "code": "living_score",
+      "name": "Living Score",
+      "version": "v1",
+      "value": 41.7,
+      "coverage": 1.0,
+      "quality_flag": "ok",
+      "computed_at": "2026-08-24T15:34:27+00:00"
+    },
+    {
+      "code": "investment_score",
+      "name": "Investment Score",
+      "version": "v1",
+      "value": 4.9,
+      "coverage": 1.0,
+      "quality_flag": "ok",
+      "computed_at": "2026-08-24T15:34:27+00:00"
+    }
+  ]
+}

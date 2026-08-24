@@ -1,0 +1,92 @@
+{
+  "a": {
+    "slug": "malaga",
+    "name": "Málaga"
+  },
+  "b": {
+    "slug": "valencia",
+    "name": "Valencia"
+  },
+  "rows": [
+    {
+      "code": "airport_distance_km",
+      "name": "Nearest major airport distance",
+      "unit": "km",
+      "a": 8.0,
+      "b": 9.0
+    },
+    {
+      "code": "avg_temp_annual",
+      "name": "Average annual temperature",
+      "unit": "C",
+      "a": 18.5,
+      "b": 17.4
+    },
+    {
+      "code": "estimated_gross_yield",
+      "name": "Estimated gross rental yield",
+      "unit": "%",
+      "a": 4.98,
+      "b": 5.55
+    },
+    {
+      "code": "foreign_population_share",
+      "name": "Foreign population share",
+      "unit": "%",
+      "a": 15.2,
+      "b": 14.1
+    },
+    {
+      "code": "population",
+      "name": "Population",
+      "unit": "count",
+      "a": 586384.0,
+      "b": 807693.0
+    },
+    {
+      "code": "property_price_m2",
+      "name": "Property price per m²",
+      "unit": "EUR/m2",
+      "a": 3180.0,
+      "b": 2550.0
+    },
+    {
+      "code": "rent_m2",
+      "name": "Rent per m²",
+      "unit": "EUR/m2/month",
+      "a": 13.2,
+      "b": 11.8
+    },
+    {
+      "code": "sunshine_hours_annual",
+      "name": "Annual sunshine hours",
+      "unit": "hours",
+      "a": 2900.0,
+      "b": 2700.0
+    },
+    {
+      "code": "investment_score",
+      "name": "Investment Score",
+      "unit": "score_0_100",
+      "a": 4.9,
+      "b": 69.5
+    },
+    {
+      "code": "living_score",
+      "name": "Living Score",
+      "unit": "score_0_100",
+      "a": 41.7,
+      "b": 43.5
+    }
+  ],
+  "insights": [
+    "Málaga: closer to a major airport",
+    "Málaga: warmer annual climate",
+    "Valencia: higher estimated gross yield",
+    "Valencia: more affordable purchase price",
+    "Valencia: more affordable rent",
+    "Málaga: more sunshine",
+    "Valencia: higher investment score",
+    "Valencia: higher living score"
+  ]
+}
