@@ -5,9 +5,8 @@
 | Source | What | Level | Access | Notes |
 |--------|------|-------|--------|-------|
 | [SERPAVI (MIVAU)](https://www.mivau.gob.es/vivienda/alquila-bien-es-tu-derecho/serpavi) | Habitual rent (€, €/m²) | Municipality (+ finer) | Excel download 2011–2024 | Tax-based, annual lag |
-| [INE Indicadores Urbanos](https://ine.es/dyngs/Prensa/UA2025.htm) | Purchase €/m², rent spend, foreigners, crime | City / mun. >20k | INEbase tables | Notarial prices from 2025 edition |
-| [INE Padrón](https://www.ine.es/) | Population | Municipality | Open tables | Official |
-| [AEMET OpenData](https://www.aemet.es/es/datos_abiertos/AEMET_OpenData) | Climate / weather | Station | Free API key | Map stations → cities |
+| [INE Indicadores Urbanos](https://www.ine.es/jaxiT3/Tabla.htm?t=69330) | Purchase €/m², crime rate | Mun. >20k | CSV `69330` | Notarial prices; crime per 1,000 |
+| [Open-Meteo Archive](https://open-meteo.com/) | Mean annual temperature | Coordinates | Free HTTP API | Interim until AEMET key |
 
 ## Tier B — trends & access
 

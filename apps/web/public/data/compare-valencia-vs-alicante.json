@@ -19,15 +19,22 @@
       "code": "avg_temp_annual",
       "name": "Average annual temperature",
       "unit": "C",
-      "a": 17.4,
-      "b": 18.0
+      "a": 18.65,
+      "b": 19.5
+    },
+    {
+      "code": "crime_rate_per_1000",
+      "name": "Criminal offences rate",
+      "unit": "per_1000",
+      "a": 80.19,
+      "b": 69.54
     },
     {
       "code": "estimated_gross_yield",
       "name": "Estimated gross rental yield",
       "unit": "%",
-      "a": 3.85,
-      "b": 3.74
+      "a": 4.69,
+      "b": 5.16
     },
     {
       "code": "foreign_population_share",
@@ -47,8 +54,8 @@
       "code": "property_price_m2",
       "name": "Property price per m²",
       "unit": "EUR/m2",
-      "a": 2550.0,
-      "b": 2280.0
+      "a": 2092.0,
+      "b": 1652.0
     },
     {
       "code": "rent_m2",
@@ -68,21 +75,21 @@
       "code": "investment_score",
       "name": "Investment Score",
       "unit": "score_0_100",
-      "a": 69.5,
-      "b": 80.2
+      "a": 30.1,
+      "b": 100.0
     },
     {
       "code": "living_score",
       "name": "Living Score",
       "unit": "score_0_100",
-      "a": 44.7,
-      "b": 75.0
+      "a": 33.8,
+      "b": 71.7
     }
   ],
   "insights": [
     "Valencia: closer to a major airport",
     "Alicante: warmer annual climate",
-    "Valencia: higher estimated gross yield",
+    "Alicante: higher estimated gross yield",
     "Alicante: more affordable purchase price",
     "Alicante: more affordable rent",
     "Alicante: more sunshine",

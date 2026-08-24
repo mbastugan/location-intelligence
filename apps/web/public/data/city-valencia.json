@@ -22,7 +22,7 @@
       "quality_flag": "ok",
       "source_code": "ourairports",
       "source_url": "https://ourairports.com/airports/VLC/",
-      "collected_at": "2026-08-24T15:56:20+00:00"
+      "collected_at": "2026-08-24T16:42:50+00:00"
     },
     {
       "code": "foreign_population_share",
@@ -34,7 +34,7 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T15:56:20+00:00"
+      "collected_at": "2026-08-24T16:42:50+00:00"
     },
     {
       "code": "population",
@@ -46,31 +46,31 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T15:56:20+00:00"
+      "collected_at": "2026-08-24T16:42:50+00:00"
     },
     {
       "code": "estimated_gross_yield",
       "name": "Estimated gross rental yield",
       "unit": "%",
       "category": "property",
-      "value": 3.85,
+      "value": 4.69,
       "period_start": "2024-01-01",
       "quality_flag": "estimated",
       "source_code": "derived_internal",
       "source_url": null,
-      "collected_at": "2026-08-24T15:56:36+00:00"
+      "collected_at": "2026-08-24T16:43:07+00:00"
     },
     {
       "code": "property_price_m2",
       "name": "Property price per m²",
       "unit": "EUR/m2",
       "category": "property",
-      "value": 2550.0,
+      "value": 2092.0,
       "period_start": "2024-01-01",
-      "quality_flag": "provisional",
-      "source_code": "seed_manual",
-      "source_url": null,
-      "collected_at": "2026-08-24T15:56:20+00:00"
+      "quality_flag": "ok",
+      "source_code": "ine_urban",
+      "source_url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69330.csv",
+      "collected_at": "2026-08-24T16:43:07+00:00"
     },
     {
       "code": "rent_m2",
@@ -82,19 +82,31 @@
       "quality_flag": "ok",
       "source_code": "serpavi_mivau",
       "source_url": "https://cdn.mivau.gob.es/portal-web-mivau/vivienda/serpavi/2026-03_09_bd_SERPAVI_2011-2024%20-%20DEFINITIVO%20WEB_v2.xlsx",
-      "collected_at": "2026-08-24T15:56:36+00:00"
+      "collected_at": "2026-08-24T16:43:07+00:00"
+    },
+    {
+      "code": "crime_rate_per_1000",
+      "name": "Criminal offences rate",
+      "unit": "per_1000",
+      "category": "safety",
+      "value": 80.19,
+      "period_start": "2023-01-01",
+      "quality_flag": "ok",
+      "source_code": "ine_urban",
+      "source_url": "https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/69330.csv",
+      "collected_at": "2026-08-24T16:43:07+00:00"
     },
     {
       "code": "avg_temp_annual",
       "name": "Average annual temperature",
       "unit": "C",
       "category": "weather",
-      "value": 17.4,
-      "period_start": "1991-01-01",
-      "quality_flag": "provisional",
-      "source_code": "seed_manual",
-      "source_url": null,
-      "collected_at": "2026-08-24T15:56:20+00:00"
+      "value": 18.65,
+      "period_start": "2024-01-01",
+      "quality_flag": "ok",
+      "source_code": "open_meteo",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive",
+      "collected_at": "2026-08-24T16:43:07+00:00"
     },
     {
       "code": "sunshine_hours_annual",
@@ -106,20 +118,15 @@
       "quality_flag": "provisional",
       "source_code": "seed_manual",
       "source_url": null,
-      "collected_at": "2026-08-24T15:56:20+00:00"
+      "collected_at": "2026-08-24T16:42:50+00:00"
     }
   ],
   "series": {
     "property_price_m2": [
       {
-        "period_start": "2023-01-01",
-        "value": 2400.0,
-        "quality_flag": "provisional"
-      },
-      {
         "period_start": "2024-01-01",
-        "value": 2550.0,
-        "quality_flag": "provisional"
+        "value": 2092.0,
+        "quality_flag": "ok"
       }
     ],
     "rent_m2": [
@@ -200,19 +207,19 @@
       "code": "living_score",
       "name": "Living Score",
       "version": "v1",
-      "value": 44.7,
+      "value": 33.8,
       "coverage": 1.0,
       "quality_flag": "ok",
-      "computed_at": "2026-08-24T15:56:36+00:00"
+      "computed_at": "2026-08-24T16:43:11+00:00"
     },
     {
       "code": "investment_score",
       "name": "Investment Score",
       "version": "v1",
-      "value": 69.5,
+      "value": 30.1,
       "coverage": 1.0,
       "quality_flag": "ok",
-      "computed_at": "2026-08-24T15:56:36+00:00"
+      "computed_at": "2026-08-24T16:43:11+00:00"
     }
   ]
 }

@@ -19,15 +19,22 @@
       "code": "avg_temp_annual",
       "name": "Average annual temperature",
       "unit": "C",
-      "a": 18.5,
-      "b": 18.0
+      "a": 19.61,
+      "b": 19.5
+    },
+    {
+      "code": "crime_rate_per_1000",
+      "name": "Criminal offences rate",
+      "unit": "per_1000",
+      "a": 58.62,
+      "b": 69.54
     },
     {
       "code": "estimated_gross_yield",
       "name": "Estimated gross rental yield",
       "unit": "%",
-      "a": 3.6,
-      "b": 3.74
+      "a": 4.51,
+      "b": 5.16
     },
     {
       "code": "foreign_population_share",
@@ -47,8 +54,8 @@
       "code": "property_price_m2",
       "name": "Property price per m²",
       "unit": "EUR/m2",
-      "a": 3180.0,
-      "b": 2280.0
+      "a": 2541.0,
+      "b": 1652.0
     },
     {
       "code": "rent_m2",
@@ -69,14 +76,14 @@
       "name": "Investment Score",
       "unit": "score_0_100",
       "a": 4.9,
-      "b": 80.2
+      "b": 100.0
     },
     {
       "code": "living_score",
       "name": "Living Score",
       "unit": "score_0_100",
-      "a": 41.7,
-      "b": 75.0
+      "a": 49.3,
+      "b": 71.7
     }
   ],
   "insights": [
