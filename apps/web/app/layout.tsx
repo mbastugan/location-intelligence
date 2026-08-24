@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Source_Sans_3 } from "next/font/google";
-import { SiteShell } from "@/components/SiteShell";
+import { Fraunces, Outfit } from "next/font/google";
 import "./globals.css";
 
 const display = Fraunces({
@@ -8,7 +7,7 @@ const display = Fraunces({
   variable: "--font-display-loaded",
 });
 
-const body = Source_Sans_3({
+const body = Outfit({
   subsets: ["latin"],
   variable: "--font-body-loaded",
 });
@@ -26,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${body.variable}`}>
-        <SiteShell>{children}</SiteShell>
-      </body>
+      <body className={`${display.variable} ${body.variable}`}>{children}</body>
     </html>
   );
 }

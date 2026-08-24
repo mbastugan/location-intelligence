@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { SiteShell } from "@/components/SiteShell";
 import { formatValue, getCompare } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -23,14 +24,14 @@ export default async function ComparePage({
   }
 
   return (
-    <>
+    <SiteShell>
+      <p className="page-kicker">Side-by-side decision view</p>
       <h1 className="page-title">
         {data.a.name} vs {data.b.name}
       </h1>
       <p className="lede">
-        Side-by-side metrics with simple decision cues. Lower purchase/rent price
-        and closer airport win when relevant; higher yield and scores win for
-        investment/living.
+        Lower purchase and rent prices win on affordability. Higher yield and
+        scores win for investment and living quality.
       </p>
 
       <section className="panel">
@@ -66,6 +67,6 @@ export default async function ComparePage({
           </tbody>
         </table>
       </section>
-    </>
+    </SiteShell>
   );
 }

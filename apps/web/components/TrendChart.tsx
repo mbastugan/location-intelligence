@@ -17,33 +17,52 @@ export function TrendChart({
     title: {
       text: title,
       left: 0,
-      textStyle: { fontSize: 14, fontWeight: 600, color: "#1c2a32" },
+      textStyle: {
+        fontSize: 13,
+        fontWeight: 600,
+        color: "#667780",
+        fontFamily: "inherit",
+      },
     },
-    grid: { left: 48, right: 16, top: 48, bottom: 32 },
+    grid: { left: 52, right: 12, top: 44, bottom: 28 },
     tooltip: { trigger: "axis" },
     xAxis: {
       type: "category",
       data: series.map((p) => p.period_start.slice(0, 4)),
-      axisLabel: { color: "#5b6b75" },
+      axisLine: { lineStyle: { color: "rgba(16,33,41,0.15)" } },
+      axisLabel: { color: "#667780" },
     },
     yAxis: {
       type: "value",
       name: unit,
-      nameTextStyle: { color: "#5b6b75" },
-      axisLabel: { color: "#5b6b75" },
-      splitLine: { lineStyle: { color: "#e6ecef" } },
+      nameTextStyle: { color: "#667780" },
+      axisLabel: { color: "#667780" },
+      splitLine: { lineStyle: { color: "rgba(16,33,41,0.08)" } },
     },
     series: [
       {
         type: "line",
         smooth: true,
         data: series.map((p) => p.value),
-        lineStyle: { color: "#0f5c6e", width: 3 },
-        itemStyle: { color: "#0f5c6e" },
-        areaStyle: { color: "rgba(15, 92, 110, 0.12)" },
+        lineStyle: { color: "#0c6b7c", width: 3 },
+        itemStyle: { color: "#0c6b7c" },
+        areaStyle: {
+          color: {
+            type: "linear",
+            x: 0,
+            y: 0,
+            x2: 0,
+            y2: 1,
+            colorStops: [
+              { offset: 0, color: "rgba(12, 107, 124, 0.28)" },
+              { offset: 1, color: "rgba(12, 107, 124, 0.02)" },
+            ],
+          },
+        },
+        symbolSize: 7,
       },
     ],
   };
 
-  return <ReactECharts option={option} style={{ height: 280, width: "100%" }} />;
+  return <ReactECharts option={option} style={{ height: 300, width: "100%" }} />;
 }

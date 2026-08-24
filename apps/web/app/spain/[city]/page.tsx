@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { SiteShell } from "@/components/SiteShell";
 import { TrendChart } from "@/components/TrendChart";
 import { formatValue, getCities, getCity } from "@/lib/data";
 
@@ -28,14 +29,14 @@ export default async function CityPage({
   const others = ["malaga", "valencia", "alicante"].filter((s) => s !== slug);
 
   return (
-    <>
-      <p className="meta">
-        {data.country.name} · INE code {data.admin_code ?? "—"}
+    <SiteShell>
+      <p className="page-kicker">
+        {data.country.name} · INE {data.admin_code ?? "—"}
       </p>
       <h1 className="page-title">{data.name}</h1>
       <p className="lede">
-        Decision snapshot for living and investing. Values marked provisional are
-        seed placeholders until official ETL replaces them.
+        Decision snapshot for living and investing. SERPAVI rents are official;
+        provisional flags mean a value is still being replaced by ETL.
       </p>
 
       <div className="score-row">
@@ -50,11 +51,11 @@ export default async function CityPage({
         ))}
       </div>
 
-      <div className="actions" style={{ marginBottom: "1.25rem" }}>
+      <div className="actions" style={{ marginBottom: "2rem" }}>
         {others.map((other) => (
           <Link
             key={other}
-            className="btn btn-secondary"
+            className="btn btn-on-light btn-secondary"
             href={`/compare/${slug}-vs-${other}`}
           >
             Compare vs {other}
@@ -95,20 +96,26 @@ export default async function CityPage({
       </section>
 
       <section className="panel">
-        <TrendChart
-          title="Property price history (€/m²)"
-          series={data.series.property_price_m2 ?? []}
-          unit="EUR/m2"
-        />
+        <h2>Property price</h2>
+        <div className="panel-chart">
+          <TrendChart
+            title="€ / m² over time"
+            series={data.series.property_price_m2 ?? []}
+            unit="EUR/m2"
+          />
+        </div>
       </section>
 
       <section className="panel">
-        <TrendChart
-          title="Rent history (€/m²/month, SERPAVI)"
-          series={data.series.rent_m2 ?? []}
-          unit="EUR/m2/month"
-        />
+        <h2>Rent (SERPAVI)</h2>
+        <div className="panel-chart">
+          <TrendChart
+            title="€ / m² / month"
+            series={data.series.rent_m2 ?? []}
+            unit="EUR/m2/month"
+          />
+        </div>
       </section>
-    </>
+    </SiteShell>
   );
 }

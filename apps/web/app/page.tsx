@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SiteShell } from "@/components/SiteShell";
 import { getCities } from "@/lib/data";
 
 export default async function HomePage() {
@@ -8,37 +9,44 @@ export default async function HomePage() {
     cities = await getCities();
   } catch {
     error =
-      "API is offline. Start the API (`uvicorn apps.api.main:app --reload --port 8000`) or switch to static data mode.";
+      "API is offline. Start the API or use static data mode for GitHub Pages.";
   }
 
   return (
-    <>
-      <section className="hero">
-        <h1>WhichPlaceGusto</h1>
-        <p>
-          Find the best place to live or invest using real data — not listing
-          spam. Compare Spanish cities on housing, rent, climate, and access.
-        </p>
-        <div className="actions">
-          <Link className="btn btn-primary" href="/spain/malaga">
-            Explore cities
-          </Link>
-          <Link className="btn btn-secondary" href="/compare/malaga-vs-alicante">
-            Compare cities
-          </Link>
+    <SiteShell fullBleed>
+      <section className="home-hero" aria-label="WhichPlaceGusto">
+        <div className="home-hero__media" aria-hidden="true" />
+        <div className="home-hero__content">
+          <h1 className="home-hero__brand">WhichPlaceGusto</h1>
+          <p className="home-hero__line">
+            Decide where to live or invest with official city data — not listing
+            spam.
+          </p>
+          <div className="actions">
+            <Link className="btn btn-primary" href="/spain/malaga">
+              Explore cities
+            </Link>
+            <Link className="btn btn-secondary" href="/compare/malaga-vs-alicante">
+              Compare cities
+            </Link>
+          </div>
         </div>
       </section>
 
-      {error ? <p className="meta">{error}</p> : null}
-
-      <div className="city-grid">
-        {cities.map((city) => (
-          <Link key={city.slug} className="city-link" href={`/spain/${city.slug}`}>
-            <strong>{city.name}</strong>
-            <span>Spain · metrics, scores, trends</span>
-          </Link>
-        ))}
-      </div>
-    </>
+      <section className="home-cities">
+        <h2 className="home-cities__head">Start with Spain</h2>
+        {error ? <p className="alert">{error}</p> : null}
+        <ul className="city-list">
+          {cities.map((city) => (
+            <li key={city.slug}>
+              <Link href={`/spain/${city.slug}`}>
+                <strong>{city.name}</strong>
+                <span>Housing · rent · climate · scores</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+    </SiteShell>
   );
 }
